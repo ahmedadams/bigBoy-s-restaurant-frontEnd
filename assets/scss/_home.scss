@@ -97,6 +97,8 @@
     }
   }
 }
+
+//menu food-preview
 #food-preview {
   background: #f4f8fb;
   padding: 100px;
@@ -151,9 +153,6 @@
     // display: flex;
     // margin-bottom: 2rem;
     .slider-track {
-      // overflow-y: hidden;
-	    // overflow-x: scroll !important;
-      // transform: scroll(calc(var(--i,0)/var(--n)*-100%));
       transform: translate3d(-0%, 0, 0);
       white-space: nowrap;
       scroll-behavior: smooth;
@@ -222,6 +221,7 @@
     }
   }
 }
+
 //Global styles
 h2 {
   font-size: 3rem;
