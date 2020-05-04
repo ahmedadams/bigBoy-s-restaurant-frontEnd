@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
   <body>
-    <!--- About us page --->
+    <!--- Wait list page --->
     <section id="app-layout">
       <!--- start of side menu --->
       <div class="side-menu">
@@ -39,10 +39,10 @@
               <a href="#">food</a>
             </li>
             <li>
-              <a href="about-us.html">about us</a>
+              <a href="/about-us.html">about us</a>
             </li>
             <li>
-              <a href="/waitlist.html">wait list</a>
+              <a href="waitlist.html">wait list</a>
             </li>
             <li>
               <a href="#">offers</a>
@@ -74,40 +74,62 @@
         </div>
       </div>
       <!--- end of side menu --->
-      <!--- start of about page content--->
-      <div id="content-section">
-      <div id="about-page">
+      <!--- start of waitlist page content--->
+    <div id="content-section">
+      <div id="waitlist-page">
         <div class="content-box">
           <div class="row">
             <div class="col-md-6">
-              <h1 class="animated fadeIn delay-.5s">About us</h1>
+              <h1 class="animated fadeIn delay-.5s">Get on the list</h1>
               <span class="border-bottom"></span>
-              <p>
-                What did New York need in the swinging 60s? A cocktail bar that delivered.
-                And that’s exactly what we gave her when we opened the first ever Big Boy's in 1980.
-                Located on the corner of 63rd street and First Avenue, it quickly became the meeting place
-                for local lovers of wild nights and fun times. So along with mouth watering food and tempting drinks,
-                we bring fun, friendliness and an extra large helping of good vibes to the table.
-                It's what makes every day seem like Friday.
-              </p>
-              <p>
-                  From our signature loaded skins to our legendary Jack Daniels sauce, we take real American flavors and
-                  make them different. These undeniably tasty and original flavors are at the heart of everything we do, and
-                  our unique and extensive menu is exactly why you might call us the home of the daredevil.
-                  What are Fridays all about? Celebration and fun, of course! And with our oh so tempting food, dreamy cocktails and
-                  infectious buzz, we’ve got all the ingredients for fun right here. Join us any day of the week and we guarantee that
-                  you will get the full Fridays experience!
-              </p>
-              </div>
-              <div class="col-md-6">
-                <img src="/img/about-us-img.jpeg" class="img-fluid" alt="about-page-image">
-              </div>
+              <form>
+                <div class="form-group">
+                  <label for="emailinput">Email address</label>
+                  <input type="email" class="form-control" id="emailinput"
+                  name="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="phoneinput">Phone number</label>
+                  <input type="email" class="form-control" id="phoneinput" name="phone"
+                  placeholder="796-644-8844">
+                </div>
+                <div class="form-group">
+                  <label for="guestsinput">How many seats?</label>
+                  <select class="form-control" id="guestsinput" name="guest">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timeinput">What time?</label>
+                  <select class="form-control" id="timeinput" name="time">
+                    <option value="6">6:00pm</option>
+                    <option value="7">7:00pm</option>
+                    <option value="8">8:00pm</option>
+                    <option value="9">9:00pm</option>
+                    <option value="10">10:00pm</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Confirm</button>
+                </div>
+              </form>
             </div>
+            <div class="col-md-6">
+              <p>
+                Please Note: This is not reservation. You will be added to the current
+                wait list. You may have short wait once you arrive while we prepare your
+                table.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-      <!--- end of about page --->
+      <!--- end of waitlist content --->
  </section>
-
   </body>
 </html>
