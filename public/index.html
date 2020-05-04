@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Big Boy Burger | Follow your taste buds</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ad38f1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+  <body>
+    <!--- Welcome page --->
+    <section id="app-layout">
+      <!--- start of side menu --->
+      <div class="side-menu">
+        <div class="logo">
+          <a href="/">
+            <img src="img/logo-black.png">
+          </a>
+        </div>
+        <div class="menu">
+          <div class="menu-title">
+            menu
+          </div>
+          <ul class="links">
+            <li>
+              <a href="#">food</a>
+            </li>
+            <li>
+              <a href="/about-us.html">about us</a>
+            </li>
+            <li>
+              <a href="#">wait list</a>
+            </li>
+            <li>
+              <a href="#">offers</a>
+            </li>
+            <li>
+              <a href="#">giftcards</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="location">
+          <div class="address">
+            505 Camden High st,<br>
+            N13 2LL, London
+          </div>
+          <div class="phone-number">
+            <a href="tel:20459988990">204-5998-8990</a>
+          </div>
+        </div>
+      </div>
+      <!--- end of side menu --->
+      <!--- start of jumbo part --->
+      <div class="welcome-jumbo">
+        <div class="status animated fadeIn delay-.3s">NEW</div>
+        <h1 class="animated fadeIn delay-.5s">Big Boy's Burger</h1>
+        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png"
+        class="burger-fries animated fadeIn delay-1s">
+      </div>
+      <!--- end of jumbo part --->
+    </section>
+<!--- End of Welcome section --->
+<!--- start of information section --->
+  <section id="information">
+    <div class="restaurant-image">
+      <img src="img/top-down.jpg">
+    </div>
+    <div class="info">
+      <h2>We are Big Boy Burgers est 1980</h2>
+      <div class="paragraphs">
+      <p>
+        We have burger restaurants in London, Reading, Bristol, Cambridge, Cardiff, Brighton, Manchester
+        and Liverpool. We make British beef patties in our own butchery and rosemary chips are cut and
+        cooked daily.Simple and versatile, this recipe for rosemary salt goes all the way back to the
+        beginning when Tom and Phil were planning their first burger restaurant.
+      </p>
+      <p>
+        Every restaurant serves local beers from neighbouring breweries, and
+        many of our restaurants serve local burgers using ingredients from nearby
+        food heroes. Together with Brighton friends Laine Brew Co we’ve brewed a British lager
+        that stands up to our burgers: a refreshing beer with balanced hops, light bitterness and
+        a biscuity malt sweetness that complements our food.
+      </p>
+    </div>
+    <a href="#" class="about-link">
+      <span>Learn more about restaurants</span>
+      <div class="circle-right">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </div>
+    </a>
+    </div>
+  </section>
+<!--- End of information section --->
+<!--- start of food-preview section --->
+<section id="food-preview">
+  <h2>We have everything for your taste buds</h2>
+  <div class="btn-round">View Our Menu</div>
+  <!--- start of food-slider --->
+  <div  class="container">
+    <div onclick="prev()" class="left-btn">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </div>
+    <div onclick="next()" class="right-btn">
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+    <div  id="slider-container" class="food-slider">
+      <div  class="slider-track">
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Appetizers
+            </div>
+            <p class="food-description">
+              Corn tortilla nachos with spicy guacamole, fresh pico de gallo and sour cream.
+              Feel the crunch! Fly solo or get sharing. Order a few for the table and enjoy a
+              bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://taco.sfo2.digitaloceanspaces.com/2019/04/CHIPS.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Burgers
+            </div>
+            <p class="food-description">
+              Beef burger, chargrilled chicken breast and popcorn shrimp, with cheese, crispy
+              bacon and Fridays® mayo. Served with beef gravy. A tasty triple trip over sea,
+              air and land and enjoy a bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Entrees
+            </div>
+            <p class="food-description">
+              6oz* rump steak, lightly spiced shrimp and half a rack of pork ribs smothered in
+              our Legendary Glaze. Served with crispy fries and seasonal veg. A beast of a feast!
+              and enjoy a bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://www.pngkey.com/png/full/342-3422633_pork-entrees-steak-pork-png.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Sides
+            </div>
+            <p class="food-description">
+            Edamame pods coated in a sweet & spicy glaze topped with pineapple pico de gallo.
+            Penne pasta in a creamy Cajun sauce (§) with fresh tomatoes, spring onions, peppers and cheese,
+            Order a few for the table and enjoy a bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Salad-Transparent-PNG.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Desserts
+            </div>
+            <p class="food-description">
+              A creamy cookie dough and vanilla milkshake topped with whipped cream,
+              cookie dough pieces and delicious Oreo® cookies. A monster of a milkshake!
+              and enjoy a bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Cocktails
+            </div>
+            <p class="food-description">
+              A creamy cookie dough and vanilla milkshake topped with whipped cream,
+              cookie dough pieces and delicious Oreo® cookies. A monster of a milkshake!
+              and enjoy a bite of everything.
+            </p>
+            <div class="food-image">
+              <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image.png">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="background"></div>
+          <div class="content">
+            <div class="food-title">
+              Cocktails
+            </div>
+            <p class="food-description">
+              With our bartenders recommendation of mixer to create a perfect serve!
+              Bold & zesty, served with an orange slice and Schweppes Lemonade.
+              A small batch gin made in New York, with floral and citrus notes.
+            </p>
+            <div class="food-image">
+              <img src="https://www.tgifridays.co.uk/images/static/products/purple_rain.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--- end of food-slider --->
+</section>
+<!--- end of food-preview section --->
+  <script src="/js/dist/script.js"></script>
+  <!-- <script src="/js/dist/vendors~FirstComp.js"></script>
+  <script src="/js/dist/FirstComp.js"></script>
+  <script src="/js/dist/main.js"></script> -->
+  </body>
+</html>
