@@ -1,0 +1,64 @@
+#single-menu-page {
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ed4852;
+    margin-bottom: 2rem;
+    font-family: 'Oleo Script', cursive;
+  }
+  .item {
+    margin-bottom: 2rem;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  h4,
+  .price {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 900;
+
+  }
+  .description {
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 300;
+      color: #636b6f;
+    }
+  }
+  P {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 300;
+    color: #b7b2b2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+// Small devices (landscape phones, 0px and up to 767px)
+@media (min-width: 0px) and (max-width: 767px) {
+  #single-menu-page {
+    padding: 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up to 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+  #single-menu-page {
+    padding: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

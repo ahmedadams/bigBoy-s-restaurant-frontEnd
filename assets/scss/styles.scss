@@ -6,7 +6,9 @@
 @import "pages/waitlist";
 @import "pages/offers";
 @import "menu/index";
+@import "menu/single-menu";
 @import "home";
+
 body {
   line-height: 1;
   background: #fafafa;
@@ -148,6 +150,8 @@ body {
 .content-box {
   background: white;
   padding: 20px;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
 
 // Small devices (landscape phones, 0px and up to 767px)
