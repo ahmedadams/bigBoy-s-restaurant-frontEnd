@@ -2,9 +2,3 @@
 node_modules/
 package-lock.json
 sw.js
-
-# Environment variables, never commit this file
-.env
-
-#Read Me doc
-README.md
