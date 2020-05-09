@@ -78,6 +78,10 @@
 
 // Medium devices (tablets, 768px and up to 991px)
 @media (min-width: 768px) and (max-width: 991px) {
+  .full-height {
+    height: 100%
+    !important;
+  }
   #menu-page {
     #food-preview {
       width: 100%;
@@ -111,7 +115,7 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px){
-  
+
 }
 
 // Extra large devices (large desktops, 1200px and up)

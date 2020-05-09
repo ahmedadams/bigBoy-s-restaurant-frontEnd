@@ -5,7 +5,7 @@
 @import "pages/about";
 @import "pages/waitlist";
 @import "pages/offers";
-@import "menu/index";
+@import "menu/categories";
 @import "menu/single-menu";
 @import "home";
 
@@ -56,7 +56,6 @@ body {
     position: absolute;
     height: 100vh;
     width: 300px;
-    // position: relative;
     .logo {
       display: flex;
       justify-content: center;
@@ -76,7 +75,7 @@ body {
           padding-bottom: 20px;
           margin-bottom: 20px;
         }
-        ul.links {
+        .links {
           li {
             a {
               display: block;
@@ -129,6 +128,7 @@ body {
       }
     }
   }
+  //hamburger menu styles
   //content-section
   #content-section {
     padding: 100px;
@@ -145,7 +145,28 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 }
-
+//mobile menu styles
+.nav {
+  height: 10vh;
+  background: white;
+  z-index: 6;
+  .mobile-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    .nav-item {
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
 //content-box styles
 .content-box {
   background: white;
@@ -154,32 +175,185 @@ body {
   background-color: #fff;
 }
 
-// Small devices (landscape phones, 0px and up to 767px)
+//Small devices (landscape phones, 0px and up to 767px)
 @media (min-width: 0px) and (max-width: 767px) {
     #app-layout {
       .side-menu {
         transform: translate3d(-300px, 0, 0);
+        }
+        .nav {
+          position: relative;
+          .logo {
+            position: absolute;
+            left: 50%;
+            top: 57%;
+            transform: translate(-50%, -50%);
+            img {
+              max-width: 120px;
+            }
+          }
+          .hamburger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+            .line {
+              width: 30px;
+              height: 3px;
+              background: black;
+              margin: 5px;
+            }
+          }
+          .mobile-links {
+            position: fixed;
+            background: white;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -15%);
+            webkit-clip-path: circle(100px at 90% -15%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+          }
+          .open{
+            clip-path: circle(1500px at 90% -15%);
+            -webkit-clip-path: circle(1500px at 90% -15%);
+            pointer-events: all;
+          }
+          .mobile-links {
+            .nav-item {
+              opacity: 0;
+              a {
+                font-size: 1.5rem;
+              }
+            }
+          }
+          .nav-item:nth-child(1) {
+            transition: all 0.5s ease-in-out 0.2s;
+          }
+          .nav-item:nth-child(2) {
+            transition: all 0.5s ease-in-out 0.4s;
+          }
+          .nav-item:nth-child(3) {
+            transition: all 0.5s ease-in-out 0.6s;
+          }
+          .nav-item:nth-child(4) {
+            transition: all 0.5s ease-in-out 0.8s;
+          }
+          .nav-item.fade {
+            opacity: 1;
+          }
+        }
+      #content-section {
+          width: 100%;
+          max-width: 100vw;
+          padding: 20px;
+          transform: translate3d(0, 0, 0);
+        }
+        .welcome-jumbo {
+          height: 90vh;
       }
-    #content-section {
-      width: 100%;
-      max-width: 100vw;
-      padding: 20px;
-      transform: translate3d(0, 0, 0);
     }
-  }
-}
 
-// Medium devices (tablets, 768px and up to 991px)
+  }
+
+// //hamburger-menu styles (for mobile and tablets, from 0px upto 991px)
+// @media (min-width: 0px) and (max-width: 991px) {
+//
+//       .welcome-jumbo {
+//         height: 90vh;
+//     }
+//
+// }
+
+//Medium devices (tablets, 768px and up to 991px)
 @media (min-width: 768px) and (max-width: 991px) {
     #app-layout {
       .side-menu {
         transform: translate3d(-300px, 0, 0);
       }
-    #content-section {
-      width: 100%;
-      max-width: 100vw;
-      padding: 20px;
-      transform: translate3d(0, 0, 0);
-    }
+      .nav {
+        position: relative;
+        .logo {
+          position: absolute;
+          left: 50%;
+          top: 57%;
+          transform: translate(-50%, -50%);
+          img {
+            max-width: 120px;
+          }
+        }
+        .hamburger {
+          position: absolute;
+          cursor: pointer;
+          right: 5%;
+          top: 50%;
+          transform: translate(-5%, -50%);
+          z-index: 2;
+          .line {
+            width: 30px;
+            height: 3px;
+            background: black;
+            margin: 5px;
+          }
+        }
+        .mobile-links {
+          position: fixed;
+          background: white;
+          height: 100vh;
+          width: 100%;
+          flex-direction: column;
+          clip-path: circle(100px at 90% -15%);
+          webkit-clip-path: circle(100px at 90% -15%);
+          transition: all 1s ease-out;
+          pointer-events: none;
+        }
+        .open{
+          clip-path: circle(1500px at 90% -15%);
+          -webkit-clip-path: circle(1500px at 90% -15%);
+          pointer-events: all;
+        }
+        .mobile-links {
+          .nav-item {
+            opacity: 0;
+            a {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .nav-item:nth-child(1) {
+          transition: all 0.5s ease-in-out 0.2s;
+        }
+        .nav-item:nth-child(2) {
+          transition: all 0.5s ease-in-out 0.4s;
+        }
+        .nav-item:nth-child(3) {
+          transition: all 0.5s ease-in-out 0.6s;
+        }
+        .nav-item:nth-child(4) {
+          transition: all 0.5s ease-in-out 0.8s;
+        }
+        .nav-item.fade {
+          opacity: 1;
+        }
+      }
+      #content-section {
+        height: 90vh;
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px;
+        transform: translate3d(0, 0, 0);
+      }
+      .welcome-jumbo {
+        height: 90vh;
+      }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .nav {
+    display: none;
   }
 }
