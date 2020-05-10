@@ -117,6 +117,10 @@
     padding: 15px;
     border-radius: 30px;
     margin-bottom: 130px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
   .container {
     width: 100%;
@@ -149,9 +153,6 @@
     overflow: hidden;
     position: relative;
     max-width: 1400px;
-    // max-width: 1400px;
-    // display: flex;
-    // margin-bottom: 2rem;
     .slider-track {
       transform: translate3d(-0%, 0, 0);
       white-space: nowrap;
@@ -166,12 +167,12 @@
       white-space: normal;
       &:hover {
         .background {
-          background: #fecc1f;
+          background: #1f2021;
           transform: translate3d(0, -200px, 0);
         }
         .content {
           .food-title {
-            color: black;
+            color: white;
           }
           .food-description {
             color: white;
